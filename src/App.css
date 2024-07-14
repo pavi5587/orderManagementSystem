@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+.no-focus-outline:focus {
+  outline: none;
+  box-shadow: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.div-end{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: end;
+  }
+
+.div-center{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.background-color{
+  background-color: #0E7897;
+  height: 100%;
+  width: 100%;
+}
+.background-color1{
+  background-color: #0E7897;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.font-color{
+  color: #0E7897;
+}
+
+.custom-input-group {
+  height: 50px;
+  width: 100%;
+}
+
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  background-color: #0E7897;
+  color: #fff;
+  width: 250px;
+}
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  background-color: #07485b;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar a:active {
+  background-color: #07485b;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%; /* Adjust width as needed */
+}
+.custom-select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  padding-right: 30px; /* Space for icon */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  height: 38px;
+}
+.custom-select-wrapper select::-ms-expand {
+  display: none;
+}
+.custom-select-wrapper .custom-select-arrow {
+  position: absolute;
+  top: 12px; /* Adjust vertical alignment */
+  right: 10px; /* Adjust horizontal alignment */
+  pointer-events: none;
+}
+.toastercss {
+  background-color: rgb(236, 232, 232) !important;
+  color: black !important;
+  font-size: 12px!important;
+  z-index: 100000 !important;
+}
+
+/* order details */
+
+.order-view-background{
+  background-color: black;
+}
+
+.order-view-text{
+  color: white;
+}
+
+.order-view-title{
+  color: #F4642E;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.order-view-button{
+  background-color: #F4642E;
+  color: white;
 }
